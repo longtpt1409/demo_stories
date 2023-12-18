@@ -21,10 +21,11 @@ const firebaseConfig = {
 
 
 // Initialize Firebase
-const stories = initializeApp(firebaseConfig, 'stories');
+const stories = initializeApp(firebaseConfig);
 const dbs = getFirestore(stories);
+const storage = getStorage(stories);
 
 export {
-    stories,
+    storage,
     dbs
 }
