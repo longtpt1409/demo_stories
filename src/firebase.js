@@ -22,7 +22,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const stories = initializeApp(firebaseConfig, 'stories');
-const dbs = getFirestore(app);
+const dbs = getFirestore(stories);
 
 export {
     stories,
