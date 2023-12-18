@@ -21,7 +21,7 @@ const firebaseConfig = {
 
 
 // Initialize Firebase
-const stories = initializeApp(firebaseConfig);
+const stories  = initializeApp(firebaseConfig);
 const dbs = getFirestore(stories);
 const storage = getStorage(stories);
 
