@@ -11,7 +11,6 @@ import {
 } from "firebase/storage";
 import toast from "react-hot-toast";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-import Smile from "../../assets/images/smile.jpeg";
 // import DeleteIcon from "@mui/icons-material/Delete";
 // import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 // import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -240,7 +239,6 @@ export default function Gallery() {
               {listUrl.length === 0 && (
                 <div className="empty-diary">
                   <h3>Up ảnh nào</h3>
-                  <img src={Smile} alt="empty-diary" />
                 </div>
               )}
               <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2 }}>
