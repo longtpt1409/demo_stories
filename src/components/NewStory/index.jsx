@@ -54,12 +54,10 @@ export default function NewStory() {
         const uuid = uuidv4();
         createStory(uuid, title, thumnail, content)
           .then((res) => {
-            console.log(res);
             setUid(uuid);
             setLoading(false);
           })
           .catch((err) => {
-            console.log(err);
             setLoading(false);
           });
       } else {
@@ -68,7 +66,6 @@ export default function NewStory() {
             setLoading(false);
           })
           .catch((err) => {
-            console.log(err);
             setLoading(false);
           });
       }
