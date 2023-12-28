@@ -11,6 +11,7 @@ import {
 } from "firebase/storage";
 import toast from "react-hot-toast";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import meo from "../../assets/images/meo.jpg";
 // import DeleteIcon from "@mui/icons-material/Delete";
 // import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 // import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -218,10 +219,10 @@ export default function Gallery() {
       <div className="container">
         {checkConfirm && (
           <div className="site-content-wrap">
-            <h3>One__again's Gallery</h3>
+            {/*<h3>One__again's Gallery</h3>
             <button className="btn-upload" onClick={handleClickOpen}>
               Upload Images
-            </button>
+            </button>*/}
           </div>
         )}
         <div className="site-gallery">
@@ -238,7 +239,8 @@ export default function Gallery() {
             <div className="gallery-wrap">
               {listUrl.length === 0 && (
                 <div className="empty-diary">
-                  <h3>Up ảnh nào</h3>
+                  {/*<h3>Up ảnh nào</h3>*/}
+                  <img src={meo} alt="empty-diary" />
                 </div>
               )}
               <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2 }}>
