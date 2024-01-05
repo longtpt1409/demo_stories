@@ -10,7 +10,7 @@ export default function Footer() {
           <div className='site-logo'>
             <img src={Logo} alt="logo-footer" />
           </div>
-          <h3>One__again © 15-12-2023. Made with by Longtpt for Lyht 🐤</h3>
+          <h3>Phyllostachys__glass © 15-12-2023. Made with by Longtpt for Lyht 🐤</h3>
         </div>
       </div>
     </footer>
