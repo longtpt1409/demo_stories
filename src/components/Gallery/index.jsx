@@ -89,7 +89,7 @@ export default function Gallery() {
 
   const getAllImages = async () => {
     setListUrl([]);
-    await listAll(ref(storage, `gallery_phyllostachys__glass`)).then((res) => {
+    await listAll(ref(storage, `gallery_lovely`)).then((res) => {
       res.items.forEach((item) => {
         getDownloadURL(ref(storage, item.fullPath)).then((url) => {
           setListUrl((prevState) => [
@@ -107,7 +107,7 @@ export default function Gallery() {
     // eslint-disable-next-line array-callback-return
     setLoading(true);
     images.map((image) => {
-      const uploadImage = ref(storage, `gallery_phyllostachys__glass/${image.name}`);
+      const uploadImage = ref(storage, `gallery_lovely/${image.name}`);
       const uploadTask = uploadBytesResumable(uploadImage, image);
       promises.push(uploadTask);
       uploadTask.on(

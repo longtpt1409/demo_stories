@@ -4,14 +4,12 @@ import './style.css'
 export default function LoadingService() {
   return (
    <div className="loading-service">
+   <span>L</span>
    <span>O</span>
-   <span>N</span>
+   <span>V</span>
    <span>E</span>
-   <span>A</span>
-   <span>G</span>
-   <span>A</span>
-   <span>I</span>
-   <span>N</span>
+   <span>L</span>
+   <span>Y</span>
  </div>
   );
 }
