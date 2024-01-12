@@ -29,6 +29,7 @@ export default function Story() {
             <div className="content">
               <h3> {story.title} </h3>
               <p> {story.content} </p>
+              {story?.date && <p> {new Date(story.date)} </p>}
             </div>
           </div>
         )}

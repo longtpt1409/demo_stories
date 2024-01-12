@@ -12,9 +12,9 @@ import {
   
   const storiesDB = collection(dbs, "stories");
   
-  const createStory = async (uid, title, thumnail,  content) => {
+  const createStory = async (uid, title, thumnail,  content, date) => {
     try {
-      await setDoc(doc(dbs, 'stories', uid), {title, thumnail, content})
+      await setDoc(doc(dbs, 'stories', uid), {title, thumnail, content, date})
       toast.success("Lưu thành công");
       const docSnap = await getDoc(doc(dbs, 'stories', uid));
       if (docSnap.exists()) {

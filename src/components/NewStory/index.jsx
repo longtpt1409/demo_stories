@@ -52,7 +52,8 @@ export default function NewStory() {
       setLoading(true);
       if (!uid) {
         const uuid = uuidv4();
-        createStory(uuid, title, thumnail, content)
+        const date = new Date().getTime();
+        createStory(uuid, title, thumnail, content, date)
           .then((res) => {
             setUid(uuid);
             setLoading(false);
