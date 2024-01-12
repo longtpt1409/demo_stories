@@ -16,7 +16,10 @@ export default function Story() {
     });
     return () => {};
   }, [param]);
-
+  const formatTimestamp = (timestamp) => {
+    const date = new Date(timestamp);
+    return date.toLocaleString();
+  };
   return (
     <div className="site-content">
       {loading && <LoadingService />}
@@ -29,7 +32,7 @@ export default function Story() {
             <div className="content">
               <h3> {story.title} </h3>
               <p> {story.content} </p>
-              {story?.date && <p> {new Date(story.date)} </p>}
+              {story?.date && <p> {formatTimestamp(story.date)} </p>}
             </div>
           </div>
         )}
